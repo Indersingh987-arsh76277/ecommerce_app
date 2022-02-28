@@ -12,7 +12,7 @@ export default function Login() {
 
   function verify(e){
       e.preventDefault();
-      console.log(formData.email,formData.password);
+      // console.log(formData.email,formData.password);
       dispatch(login(formData,navigate));
   }
 
