@@ -1,0 +1,32 @@
+.productCard{
+    padding:0.2em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.productCard_image{
+    width:100%;
+}
+
+.productCard_image > img{
+    width:100%;
+    background-position: center;
+}
+
+.productCard_content{
+    display:felx;
+    padding:0.5em;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.productCard_title{
+    font-size: 1.5em;
+    font-weight: 600;
+}
