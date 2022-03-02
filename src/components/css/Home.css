@@ -1,0 +1,8 @@
+.home{
+    display:flex;
+    flex-direction: column;
+    width:100vw;
+    min-height:100vh;
+    overflow-x:none;
+    align-items: center;
+}
