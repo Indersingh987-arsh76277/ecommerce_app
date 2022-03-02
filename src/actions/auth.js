@@ -30,7 +30,7 @@ export const register = (formData,navigate) => async (dispatch) => {
         dispatch({type:REGISTER_LOADING,payload:{loading:true}});
         api.post("/api/user/signup",formData)
         .then((response)=>{
-            dispatch({type:REGISTER_FAILED,payload:{userId:response.data?.userId,token:response.data?.token,loading:false}});
+            dispatch({type:REGISTER_SUCCESS,payload:{userId:response.data?.userId,token:response.data?.token,loading:false}});
             navigate('/');
         })
         .catch((error)=>{
