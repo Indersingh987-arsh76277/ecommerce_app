@@ -6,6 +6,7 @@ import {
 } from "./types";
 
 export const getAllProducts=()=>async (dispatch)=>{
+    // console.log("here");
     try{
         dispatch({type:GET_ALL_PRODUCTS_LOADING,payload:{loading:true}});
         api.get('/api/db/getAllProducts').then((response)=>{
