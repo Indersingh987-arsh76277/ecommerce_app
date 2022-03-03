@@ -1,3 +1,4 @@
+import axios from "axios";
 import api from "../api"
 import {
     SEARCH_PRODUCT_FAILED,
@@ -9,7 +10,6 @@ import {
 export const search = (query,navigate) => async (dispatch) => {
     try {
         dispatch({type:SEARCH_PRODUCT_LOADING,payload:{loading:true}});
-        
     } catch (error) {
         console.log(error);
     }

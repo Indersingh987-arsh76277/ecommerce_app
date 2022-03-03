@@ -43,3 +43,15 @@ export default function Login() {
 
   )
 }
+
+
+
+/*
+Show All products - '/'
+Show one product - '/product/:id'
+show all products by category - '/category/:id'
+show cart - '/cart'
+show checkout - '/checkout'
+
+
+*/
