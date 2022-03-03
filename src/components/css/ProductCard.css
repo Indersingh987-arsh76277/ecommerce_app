@@ -24,9 +24,28 @@
     padding:0.5em;
     flex-direction: column;
     align-items: flex-start;
+    
 }
 
 .productCard_title{
     font-size: 1.5em;
     font-weight: 600;
+    margin-bottom: 0.3em;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productCard_text{
+    margin-bottom:0.3em;
+}
+
+.productCard_price_tag{
+    font-size: 0.8em;
+    font-weight:500;
+    color:red;
+}
+
+.star_checked{
+    color:orange;
 }

@@ -8,20 +8,21 @@ import "../css/Products.css"
 import { getAllProducts } from '../../actions/getProducts'; 
 export default function Products() {
   const navigate = useNavigate();
-  let loading=true;
-  loading=useSelector(state=>state.products?.loading);
   const dispatch = useDispatch();
-  let products='';
-  products = useSelector(state=>state.getAllProducts?.products);
+
+  let loading = useSelector(state=>state.getAllProducts?.loading);
+  let products= useSelector(state=>state.getAllProducts?.products);
   const errors = useSelector(state=>state.getAllProducts?.errors);
+
   useEffect(()=>{
      dispatch(getAllProducts());
   },[]);
    var array = [1,2,3,4,5,6,7,8];
   return (
+    loading ? <Loading />:
     <div className="products">
-        {array.map((key)=>(
-          <Card key={key}/>
+        {products?.data.map((product)=>(
+          <Card key={product._id} product = {product}/>
         ))}
     </div>
   )

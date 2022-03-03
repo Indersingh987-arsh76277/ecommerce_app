@@ -4,7 +4,7 @@ import {
     GET_ALL_PRODUCTS_SUCCESS
 } from '../actions/types';
 
-const reducer = (state={},action)=>{
+const reducer = (state={loading:true},action)=>{
     switch (action.type){
         case GET_ALL_PRODUCTS_LOADING:
             return action.payload;
